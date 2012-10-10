@@ -20,4 +20,5 @@ homework2012
 		cout << "hello world" << endl;
 	}
 
-- [广东医学院主页](http://www,gdmc.edu.cn)
+- [广东医学院主页](http://www.gdmc.edu.cn)
+- ![图片](http://stu.gdmc.edu.cn/images/logo.jpg)
