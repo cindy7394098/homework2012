@@ -8,3 +8,14 @@ homework2012
 - 在学期末把作业提交到Git上。
 - 把对应文档放入对应班级
 - 文件夹命名以组长学号命名_题目
+
+
+##### markdown示例
+
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+		cout << "hello world" << endl;
+	}
