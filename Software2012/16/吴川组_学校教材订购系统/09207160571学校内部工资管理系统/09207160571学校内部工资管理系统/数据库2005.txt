@@ -1,0 +1,88 @@
+USE [money]
+GO
+/****** Object:  Table [dbo].[teacher]    Script Date: 10/21/2012 14:56:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[teacher](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[number] [int] NOT NULL,
+	[name] [varchar](50) NOT NULL,
+	[section] [varchar](50) NOT NULL,
+	[sex] [varchar](50) NOT NULL,
+	[ban] [varchar](50) NOT NULL,
+	[password] [varchar](50) NOT NULL,
+	[chu] [int] NULL,
+	[que] [int] NULL,
+	[tax] [varchar](50) NULL,
+	[bao] [varchar](50) NULL,
+	[base] [varchar](50) NULL,
+	[jiang] [varchar](50) NULL,
+	[faj] [varchar](50) NULL,
+	[fyuan] [text] NULL,
+	[lei] [varchar](50) NULL,
+	[real] [varchar](50) NULL,
+	[zhi] [varchar](50) NULL,
+	[diaos] [text] NULL,
+ CONSTRAINT [PK_teacher] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+SET IDENTITY_INSERT [dbo].[teacher] ON
+INSERT [dbo].[teacher] ([id], [number], [name], [section], [sex], [ban], [password], [chu], [que], [tax], [bao], [base], [jiang], [faj], [fyuan], [lei], [real], [zhi], [diaos]) VALUES (1, 204, N'黄成意', N'临床', N'男', N'6222300050072373', N'123', 100, 5, N'100', N'100', N'5000', N'400', N'50', N'缺勤次数太多，特以此惩罚', NULL, N'5150', N'教师', N'家庭原因，批准调职')
+INSERT [dbo].[teacher] ([id], [number], [name], [section], [sex], [ban], [password], [chu], [que], [tax], [bao], [base], [jiang], [faj], [fyuan], [lei], [real], [zhi], [diaos]) VALUES (2, 205, N'向函', N'信息工程', N'男', N'6222300050072374', N'123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'6000', NULL, NULL)
+INSERT [dbo].[teacher] ([id], [number], [name], [section], [sex], [ban], [password], [chu], [que], [tax], [bao], [base], [jiang], [faj], [fyuan], [lei], [real], [zhi], [diaos]) VALUES (3, 206, N'云峰', N'信息工程', N'男', N'6222300050072376', N'123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'1000', NULL, NULL)
+INSERT [dbo].[teacher] ([id], [number], [name], [section], [sex], [ban], [password], [chu], [que], [tax], [bao], [base], [jiang], [faj], [fyuan], [lei], [real], [zhi], [diaos]) VALUES (4, 207, N'huang', N'临床', N'男', N'6222300050072378', N'123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'1000', NULL, NULL)
+SET IDENTITY_INSERT [dbo].[teacher] OFF
+/****** Object:  Table [dbo].[renshi]    Script Date: 10/21/2012 14:56:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[renshi](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[username] [varchar](50) NOT NULL,
+	[password] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_renshi] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+SET IDENTITY_INSERT [dbo].[renshi] ON
+INSERT [dbo].[renshi] ([id], [username], [password]) VALUES (1, N'huang', N'123')
+INSERT [dbo].[renshi] ([id], [username], [password]) VALUES (2, N'yi', N'123')
+SET IDENTITY_INSERT [dbo].[renshi] OFF
+/****** Object:  Table [dbo].[cai]    Script Date: 10/21/2012 14:56:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[cai](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[caiuser] [varchar](50) NOT NULL,
+	[password] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_cai] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+SET IDENTITY_INSERT [dbo].[cai] ON
+INSERT [dbo].[cai] ([id], [caiuser], [password]) VALUES (1, N'yi', N'123')
+SET IDENTITY_INSERT [dbo].[cai] OFF
