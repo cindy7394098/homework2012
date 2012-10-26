@@ -48,3 +48,5 @@ C:\Users\Administrator\Desktop\money\money\obj\x86\Debug\GenerateResource.read.1
 C:\Users\Administrator\Desktop\money\money\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\Administrator\桌面\工资系统最终版\工资系统最终版\money\money\obj\x86\Debug\money.exe
 C:\Documents and Settings\Administrator\桌面\工资系统最终版\工资系统最终版\money\money\obj\x86\Debug\money.pdb
+E:\code_base\homework\Software2012\16\09207160571学校内部工资管理系统\09207160571学校内部工资管理系统\money\money\obj\x86\Debug\money.exe
+E:\code_base\homework\Software2012\16\09207160571学校内部工资管理系统\09207160571学校内部工资管理系统\money\money\obj\x86\Debug\money.pdb
